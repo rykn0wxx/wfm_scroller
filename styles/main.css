@@ -1,0 +1,69 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(255,255,255, 0.87);
+  -webkit-font-smoothing: antialiased;
+}
+
+.box {
+  margin: 50px auto;
+  max-width: calc(100% - 100px);
+  background: rgba(0,0,0,0);
+}
+.box .jumbotron {
+  border: 0 solid transparent;
+  box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.1);
+}
+@media screen and (min-width: 768px) {
+  .box .jumbotron {
+    padding: 25px 20px;
+  }
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li >a:focus {
+  background-image: none;
+}
+
+.btn .caret {
+  margin-left: 5px;
+}
+
+.z-bottom-sheet {
+  padding: 15px;
+}
+
+.btn-footer {
+  float: right;
+  margin-right: 50px;
+}
+.slide {
+  border: 4px solid black;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.blurb {
+  border-bottom: 4px solid black;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.slide5 .blurb {
+  color: #2196F3;
+  background: #E3F2FD;
+  padding: 10px;
+  min-height: 150px;
+}
+
+.blurb .title {
+  font-size: 64px;
+  letter-spacing: 0.02em;
+}
+.blurb .sub {
+  font-size: 24px;
+}
+
+.example {
+  background: #eee;
+  padding: 30px;
+}
