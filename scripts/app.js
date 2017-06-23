@@ -41,9 +41,9 @@
         replace: true,
         scope: true,
         template: '<div class="btn-group">' +
-            '<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ selectedTheme }} <span class="caret"></span></button>' +
+            '<button type="button" class="btn-blue btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ selectedTheme }} <span class="caret"></span></button>' +
             '<ul class="dropdown-menu"><li ng-repeat="theme in themes"><a href="styles/{{ theme.cssMin }}.css?{{ initTime }}" ng-click="updateTheme($event)">{{ theme.name }}</a></li></ul>' +
-            '<button type="button" class="btn btn-default" ng-click="showFormy()">Update Message</button>' +
+            '<button type="button" class="btn btn-default btn-red" ng-click="showFormy()">Update Message</button>' +
           '</div>',
         link: function (scope, elem, attr) {
           scope.selectedTheme = 'Select theme  ';

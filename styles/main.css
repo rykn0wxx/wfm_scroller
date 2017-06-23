@@ -20,6 +20,13 @@ body {
   }
 }
 
+.btn-red {
+  background: red;
+}
+.btn-blue {
+  background: blue;
+}
+
 .dropdown-menu > li > a:hover, .dropdown-menu > li >a:focus {
   background-image: none;
 }
