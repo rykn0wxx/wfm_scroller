@@ -1,1 +1,18 @@
+$btn-default-color:     #fafafa;
+$btn-primary-color:     $btn-default-color;
+$btn-success-color:     #212121;
+$btn-info-color:        $btn-default-color;
+$btn-warning-color:     $btn-default-color;
+$btn-danger-color:      $btn-default-color;
+$btn-default-bg:        #607d8b;
+$brand-primary:         #2979ff;
+$brand-success:         #1de9b6;
+$brand-info:            #536dfe;
+$brand-warning:         #ff9800;
+$brand-danger:          #ef5350;
+@import "bootstrap-sprockets";
+
+@import "font-awesome";
+@import "bootstrap";
+
 @import "main";

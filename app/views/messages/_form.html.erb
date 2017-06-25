@@ -1,0 +1,23 @@
+<%= simple_form_for(msg, html: { class: 'form-horizontal app-form' }) do |f| %>
+  <%= f.error_notification %>
+
+  <h4 class="body1"><%= msg.name.blank? ? "New Record" : msg.name + " Information" %></h4>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :published %>
+    <div class="form-group">
+      <%= f.label :valid_to, :class => "col-sm-3 control-label" %>
+      <div class="col-sm-9">
+        <%= f.date_field :valid_to, :class => "form-control input-sm" %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :content, :class => "control-label" %>
+      <%= f.text_area :content, :class => "tinymce form-control", :rows => 10 %>
+    </div>
+    <%= f.input :content, :input_html => { :class => "tinymce" } %>
+
+  </div>
+
+<% end %>

@@ -1,0 +1,24 @@
+<% title @region.name, true, true %>
+
+<div class="row">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <p>
+        <strong>Name:</strong>
+        <%= @region.name %>
+      </p>
+
+      <p>
+        <strong>Code:</strong>
+        <%= @region.code %>
+      </p>
+
+      <p>
+        <strong>Is active:</strong>
+        <%= @region.is_active %>
+      </p>
+      <%= link_to 'Back', regions_path, :class => 'btn btn-sm btn-default btn-cancel' %>
+      <%= link_to 'Edit', edit_region_path(@region), :class => 'btn btn-info btn-sm' %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="masterhead mar10">
+  <%= content_tag :h4,  yield(:title), :class => "mar10" if show_title? %>
+  <nav>
+    <ul class="nav nav-justified">
+      <li class="<%= "active" if same_controller?("home") %>">
+        <%= link_to "Home", root_path %>
+      </li>
+      <li class="<%= "active" if same_controller?("regions") %>">
+        <%= link_to "Region", regions_path %>
+      </li>
+      <li class="<%= "active" if same_controller?("messages") %>">
+        <%= link_to "Message", messages_path %>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -6,10 +6,15 @@
 		<meta name="description" content="rykn0wxx" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
     <title><%= content_for?(:title) ? yield(:title) + " | WfmScroller" : "WfmScroller" %></title>
+    <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+    <%= tag :meta, name: 'turbolinks-cache-control', content: 'no-cache' %>
+
   </head>
 
   <body>
@@ -20,7 +25,7 @@
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
 
-      <%= content_tag :h3, yield(:title) if show_title? %>
+      <%= render "partials/header" if show_header? %>
 
       <%= yield %>
 

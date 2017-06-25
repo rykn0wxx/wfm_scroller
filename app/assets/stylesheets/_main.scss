@@ -3,6 +3,11 @@ $pri-txt: #212121;
 $pri-font: Helvetica, Verdana, sans-serif, Arial;
 $link-color: #0d47a1;
 $link-hover: #2979ff;
+$font-size:   10px;
+@function rem($multiplier) {
+  @return $multiplier * $font-size;
+}
+
 *,
 *:before, *::before, *::after, *:after {
 	box-sizing: border-box;
@@ -24,6 +29,23 @@ html {
 
 html, body {
   min-height: 100%;
+}
+
+.transition {
+	transition: all 0.3s ease-in-out;
+}
+
+a {
+	@extend .transition;
+	color: $link-color;
+	text-decoration: none;
+	img {
+		border: none;
+	}
+	&:hover {
+		color: $link-hover;
+		text-decoration: none;
+	}
 }
 
 .rykn0wxx {
@@ -52,18 +74,6 @@ html, body {
   	}
   }
 
-  a {
-    color: $link-color;
-    text-decoration: none;
-    img {
-      border: none;
-    }
-    &:hover {
-      color: $link-hover;
-      text-decoration: none;
-    }
-  }
-
   .clear {
     clear: both;
     height: 0;
@@ -73,64 +83,186 @@ html, body {
   #wrapper {
     width: 85%;
     margin: 0 auto;
-    background-color: #e3f2fd;
+    background-color: lighten(#e3f2fd, 5%);
     padding: 20px 40px;
     border: solid 1px darken($pri-bg, 15%); //#263238;
     margin-top: 20px;
     box-shadow: 0px 25px 15px -15px rgba(0, 0, 0, 0.3);
+		#flash_notice, #flash_error, #flash_alert {
+			padding: 5px 8px;
+			margin: 10px 0;
+		}
+
+		#flash_notice {
+			background-color: #CFC;
+			border: solid 1px #6C6;
+		}
+
+		#flash_error, #flash_alert {
+			background-color: #FCC;
+			border: solid 1px #C66;
+		}
+
+		.error_messages {
+			width: 400px;
+			border: 2px solid #CF0000;
+			padding: 0px;
+			padding-bottom: 12px;
+			margin-bottom: 20px;
+			background-color: #f0f0f0;
+			font-size: 12px;
+			h2 {
+				text-align: left;
+				font-weight: bold;
+				padding: 5px 10px;
+				font-size: 12px;
+				margin: 0;
+				background-color: #c00;
+				color: #fff;
+			}
+			p {
+				margin: 8px 10px;
+			}
+			ul {
+				margin: 0;
+			}
+		}
+
+		.field_with_errors {
+			display: inline;
+		}
+
+		form {
+			.field, .actions {
+				margin: 10px 0;
+			}
+		}
+
+		.nav {
+			> li {
+				> a {
+					transition: all 0.3s ease-in-out;
+					&:hover, &:focus {
+						color: #fafafa;
+						background-color: #82b1ff;
+					}
+				}
+				&.active {
+					> a {
+						background-color: #bbdefb;
+						background-image: none;
+						box-shadow: inset 0 3px 7px rgba(0,0,0,.15);
+						&:hover, &:focus {
+							color: #fafafa;
+							background-color: #82b1ff;
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+	.btn {
+		@extend .transition;
+	}
+
+	.mar10 {
+		margin-bottom: 10px;
+	}
+
+  .text-red {
+    color: #dd4b39;
   }
 
-  #flash_notice, #flash_error, #flash_alert {
-    padding: 5px 8px;
-    margin: 10px 0;
-  }
+	.subhead {
+		font-size: rem(1.600);
+	  font-weight: 400;
+	  letter-spacing: 0.010em;
+	  line-height: rem(2.4);
+	}
 
-  #flash_notice {
-    background-color: #CFC;
-    border: solid 1px #6C6;
-  }
+  .body1 {
+		font-size: rem(1.400);
+	  font-weight: 500;
+	  letter-spacing: 0.010em;
+	  line-height: rem(2.4);
+	}
 
-  #flash_error, #flash_alert {
-    background-color: #FCC;
-    border: solid 1px #C66;
-  }
+  .panel {
+		box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 1px 0px rgba(0, 0, 0, 0.19), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+	}
 
-  .error_messages {
-    width: 400px;
-    border: 2px solid #CF0000;
-    padding: 0px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
+  .add_field {
     font-size: 12px;
-    h2 {
-      text-align: left;
-      font-weight: bold;
-      padding: 5px 10px;
-      font-size: 12px;
-      margin: 0;
-      background-color: #c00;
-      color: #fff;
+    padding: 5px 8px;
+    text-decoration: none;
+    &:hover, &:focus {
+      text-decoration: none;
     }
-    p {
-      margin: 8px 10px;
-    }
-    ul {
-      margin: 0;
+    &:hover {
+      background-color: rgba(158,158,158,0.2);
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     }
   }
 
-  .field_with_errors {
-    display: inline;
+	.form-inputs {
+    position: relative;
+		padding: 15px 30px;
+		margin-bottom: 10px;
+		border: 1px solid rgba(0,0,0,0.1);
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3), 0 5px 8px -5px rgba(0,0,0,0.1);
+    .checkbox {
+      input[type="checkbox"] {
+        height: auto;
+      }
+    }
+    .remove-action {
+      @media (min-width: 768px) {
+        position: absolute;
+        left: 10px;
+        top: 23px;
+        z-index: 10;
+      }
+      position: absolute;
+      left: 85%;
+      top: 20px;
+      z-index: 10;
+      .remove_field {
+        @extend .add_field;
+      }
+    }
+	}
+
+  .assoc {
+    @extend .form-inputs;
   }
 
-  form {
-    .field, .actions {
-      margin: 10px 0;
-    }
-    label {
-      display: block;
-    }
-  }
+
+
+  // .assoc {
+  //   position: relative;
+  //   @media (min-width: 768px) {
+  //     display: flex;
+  //     flex-direction: row;
+  //   }
+  //   .remove-action {
+  //     position: absolute;
+  //     right: 0;
+  //     top: -5px;
+  //     @media (min-width: 768px) {
+  //       right: 0;
+  //       top: 0;
+  //       position: relative;
+  //       flex: 1 1 100%;
+  //       max-width: 3%;
+  //       max-height: 100%;
+  //     }
+  //     .remove_field {
+  //       display: block;
+  //       padding: 10px 15px 0 15px;
+  //
+  //     }
+  //   }
 
 }

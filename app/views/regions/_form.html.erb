@@ -1,0 +1,27 @@
+<%= simple_form_for(@region, html: { class: 'form-horizontal app-form' }) do |f| %>
+  <%= f.error_notification %>
+
+  <h4 class="subhead"><%= @region.name.blank? ? "Region Information" : @region.name + " Information" %></h4>
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :code %>
+    <%= f.input :is_active %>
+  </div>
+
+  <h4 class="subhead">Projects Information</h4>
+  <div class="form-assoc">
+    <%= f.fields_for :projects do |builder| %>
+      <%= render 'project', :f => builder %>
+    <% end %>
+  </div>
+  <%= link_to_add_fields "Add Field", f, :projects %>
+
+
+
+
+  <div class="form-actions">
+    <%= link_to "Back", regions_path, :class => "btn btn-sm btn-default btn-cancel" %>
+    <%= link_to add_nav[:name], add_nav[:path], :class => "btn btn-primary btn-sm" if !add_nav.nil? %>
+    <%= f.button :submit %>
+  </div>
+<% end %>
