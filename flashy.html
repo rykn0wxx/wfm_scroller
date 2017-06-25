@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="rykn0wxx v3" />
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>WFM Scroller News</title>
+    <link rel="stylesheet" href="styles/flashing.css" type='text/css' />
+
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+
+      <div class="flash-heading">
+        <h3 id="repdate">
+          <small>Reporting Date: </small> 26-June-2017
+        </h3>
+        <h3 id="repinterval">
+          <small>Interval: </small> 13:00 EST
+        </h3>
+        <div class="page-ctrl">
+          <button class="btn-ctrl">Update Message</button>
+        </div>
+      </div>
+
+      <div class="flash-container">
+        <div class="flash-content">
+          <table class='tbl tbl-scroll'>
+          <thead>
+          <tr>
+          <th>Project Name</th>
+          <th>Unofficial SLA as of 1300EST</th>
+          <th>MTD SLA as of Yesterday</th>
+          <th>OUTAGE || Callouts</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>FIES</td>
+          <td>95.6%</td>
+          <td class='text-red'>77.9%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          <tr>
+          <td>Software One</td>
+          <td class='text-red'>66.8%</td>
+          <td class='text-red'>67.5%</td>
+          <td>Something is happening and Ops dont know it</td>
+          </tr>
+          <tr>
+          <td>NOVO NORDISK</td>
+          <td class='text-red'>63.1%</td>
+          <td>93.1%</td>
+          <td>Something is happening and Ops dont know it</td>
+          </tr>
+          <tr>
+          <td>Bio-Rad - EMEA</td>
+          <td class='text-red'>56.2%</td>
+          <td class='text-red'>55.5%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          <tr>
+          <td>Brown-Forman</td>
+          <td>88.5%</td>
+          <td class='text-red'>50.7%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          <tr>
+          <td>Alcoa - LATAM</td>
+          <td class='text-red'>55.7%</td>
+          <td>80.2%</td>
+          <td>Something is happening and Ops dont know it</td>
+          </tr>
+          <tr>
+          <td>UNITEC</td>
+          <td class='text-red'>61.6%</td>
+          <td>95.0%</td>
+          <td>Something is happening and Ops dont know it</td>
+          </tr>
+          <tr>
+          <td>Amcor</td>
+          <td>84.1%</td>
+          <td class='text-red'>76.0%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          <tr>
+          <td>Banco Fibra</td>
+          <td>97.9%</td>
+          <td>92.8%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          <tr>
+          <td>Sicredi</td>
+          <td class='text-red'>56.0%</td>
+          <td>99.3%</td>
+          <td>Something is happening and Ops dont know it</td>
+          </tr>
+          <tr>
+          <td>Nidera</td>
+          <td>98.2%</td>
+          <td>87.8%</td>
+          <td>Doing something that is nothing</td>
+          </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="flash-form">
+        <div class="grp-form">
+          <label>Date</label>
+          <input type="text" placeholder="26-June-2017" />
+        </div>
+        <div class="grp-form">
+          <label>Interval</label>
+          <input type="text" placeholder="13:00 EST" />
+        </div>
+        <div class="grp-form">
+          <label>Table Message</label>
+          <textarea rows="3" placeholder="Enter output of the config file...."></textarea>
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript">
+      var fixScrolling = function () {
+        setTimeout(function() {
+          var fcontainer = document.querySelector('.flash-container');
+          var fcontent = fcontainer.querySelector('.flash-content');
+          fcontainer.style.height = (fcontent.offsetHeight + 20) + "px";
+          fcontent.classList.add('scroll');
+        },100);
+      };
+      if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
+        fixScrolling();
+      } else {
+        document.addEventListener('DOMContentLoaded', fixScrolling);
+      }
+    </script>
+  </body>
+</html>

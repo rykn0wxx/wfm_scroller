@@ -1,0 +1,242 @@
+@charset "UTF-8";
+*,
+*:before,
+*::before,
+*::after,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  line-height: 1.4;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,body {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  text-shadow: none !important;
+  background-color: #4B7399;
+  color: #f5f5f5;
+  background-image: linear-gradient(#4B7399, #527596 60%, #6285A6);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif, Helvetica, Arial;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.wrapper {
+  padding: 20px;
+  width: 90%;
+  min-height: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  /*box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.3), 0px 4px 5px 0px rgba(0, 0, 0, 0.19), 0px 15px 10px -10px rgba(0, 0, 0, 0.3);*/
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.wrapper p {
+  margin: 0 0 10px;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before, .clearfix::before, .clearfix:after, .clearfix::after,
+.wrapper:before, .wrapper::before, .wrapper:after, .wrapper::after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.clearfix:after, .clearfix::after,
+.wrapper:after, .wrapper::after {
+	clear: both;
+}
+
+.wrapper .flash-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: rgba(38, 50, 56, 0.1);
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(250, 250, 250, 0.2);
+}
+
+.wrapper .flash-container p {
+  letter-spacing: 0.03em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+  filter: dropshadow(color=rgba(0,0,0,0.3), offx=-1, offy=-1);
+
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: slideInUp;
+  transform: translateY(80%);
+}
+
+.wrapper .flash-container .flash-content {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  visibility: hidden;
+  transform: translateX(90%);
+}
+
+.wrapper .flash-container .flash-content.scroll {
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  animation: slideInUp 30s ease infinite;
+
+}
+
+.wrapper .flash-heading {
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .flash-heading h3 {
+  font-weight: 500;
+  font-size: 1.15em;
+  letter-spacing: 0.02em;
+}
+
+.wrapper .flash-heading small {
+  text-align: right;
+  display: inline-block;
+  min-width: 120px;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+.wrapper table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.wrapper td, .wrapper th {
+  padding: 0;
+}
+
+.wrapper .tbl {
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.wrapper .tbl > tbody > tr > td:nth-child(2),
+.wrapper .tbl > tbody > tr > td:nth-child(3) {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.wrapper .tbl > thead > tr > th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.wrapper .tbl > thead > tr > th {
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.wrapper .tbl > tbody > tr > td {
+  padding: 5px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+.wrapper .tbl > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(0,0,0,0.05);
+}
+.wrapper .tbl > tbody > tr:nth-of-type(even) {
+  background-color: rgba(0,0,0,0.02);
+}
+.wrapper .tbl > tbody > tr:hover {
+  background-color: rgba(0,0,0,0.08);
+}
+
+.wrapper table.tbl col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+
+.wrapper table.tbl th[class*="col-"],
+.wrapper table.tbl td[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+
+.wrapper .btn-ctrl {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.text-red {
+  background: rgba(255, 205, 210, 0.1);
+  color: #ffcdd2 !important;
+}
+
+.wrapper .flash-form {
+  position: absolute;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(90%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
