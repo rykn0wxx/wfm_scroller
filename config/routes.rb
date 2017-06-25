@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  Mercury::Engine.routes
   resources :regions
 
   resources :messages

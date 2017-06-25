@@ -10,9 +10,13 @@ $brand-success:         #1de9b6;
 $brand-info:            #536dfe;
 $brand-warning:         #ff9800;
 $brand-danger:          #ef5350;
+@import "froala_editor.min.css";
+@import "froala_style.min.css";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import "bootstrap-sprockets";
 
-@import "font-awesome";
 @import "bootstrap";
 
 @import "main";
