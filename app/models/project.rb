@@ -15,4 +15,6 @@
 
 class Project < ApplicationRecord
   belongs_to :region
+
+  validates :name, presence: true
 end

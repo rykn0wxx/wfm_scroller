@@ -18,5 +18,11 @@ $brand-danger:          #ef5350;
 @import "bootstrap-sprockets";
 
 @import "bootstrap";
+@import "daterangepicker";
+
+@import "themes/dark";
+@import "plugins/colors";
+@import "plugins/table";
+@import "plugins/code_view";
 
 @import "main";

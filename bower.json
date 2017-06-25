@@ -1,0 +1,8 @@
+{
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+      "bootstrap-daterangepicker": "2.1.25"
+    }
+  }
+}

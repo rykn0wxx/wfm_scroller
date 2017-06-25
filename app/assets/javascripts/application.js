@@ -14,7 +14,14 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 
+//= require moment
+//= require daterangepicker
+
 //= require froala_editor.min.js
+//= require plugins/code_beautifier.min.js
+//= require plugins/table.min.js
+//= require plugins/colors.min.js
+//= require plugins/code_view.min.js
 
 //= require app
 

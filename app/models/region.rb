@@ -13,4 +13,7 @@
 class Region < ApplicationRecord
   has_many :projects, :dependent => :destroy
   accepts_nested_attributes_for :projects, allow_destroy: true, reject_if: proc { |att| att['name'].blank? }
+
+  validates :name, presence: true
+  validates :code, presence: true, length: { maximum: 3 }
 end

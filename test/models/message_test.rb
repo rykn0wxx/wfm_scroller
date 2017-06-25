@@ -6,7 +6,7 @@
 #  name       :string
 #  content    :text
 #  published  :boolean
-#  valid_to   :date
+#  valid_to   :datetime
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

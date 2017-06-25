@@ -47,3 +47,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'simple_form', '~> 3.5'
 gem 'wysiwyg-rails', '~> 2.6', '>= 2.6.2'
+gem 'bower-rails', '~> 0.11.0'

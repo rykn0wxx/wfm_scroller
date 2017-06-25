@@ -3915,3 +3915,1672 @@ Processing by MessagesController#new as HTML
 Completed 200 OK in 12062ms (Views: 12033.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:17:48 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (95.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (107.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 1250ms (Views: 1221.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:20:28 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 192ms (Views: 178.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:25:01 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 1490ms (Views: 1466.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:25:30 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 313ms (Views: 294.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:25:56 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 345ms (Views: 332.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:26:16 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 301ms (Views: 283.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:28:48 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 215ms (Views: 196.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:29:24 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 204ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 10:34:31 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (31.2ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 315ms (Views: 267.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions/1/edit" for 127.0.0.1 at 2017-06-25 10:34:35 -0400
+Processing by RegionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT  "regions".* FROM "regions" WHERE "regions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering regions/edit.html.erb within layouts/application
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."region_id" = ?[0m  [["region_id", 1]]
+  Rendered regions/_project.html.erb (15.0ms) [cache miss]
+  Rendered regions/_project.html.erb (8.0ms) [cache miss]
+  Rendered regions/_project.html.erb (4.0ms) [cache miss]
+  Rendered regions/_form.html.erb (155.0ms) [cache miss]
+  Rendered regions/edit.html.erb within layouts/application (171.6ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 420ms (Views: 383.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions/1/edit" for 127.0.0.1 at 2017-06-25 10:37:34 -0400
+Processing by RegionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegion Load (1.0ms)[0m  [1m[34mSELECT  "regions".* FROM "regions" WHERE "regions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering regions/edit.html.erb within layouts/application
+  [1m[36mProject Load (0.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."region_id" = ?[0m  [["region_id", 1]]
+  Rendered regions/_project.html.erb (5.0ms) [cache miss]
+  Rendered regions/_project.html.erb (4.0ms) [cache miss]
+  Rendered regions/_project.html.erb (3.0ms) [cache miss]
+  Rendered regions/_form.html.erb (54.0ms) [cache miss]
+  Rendered regions/edit.html.erb within layouts/application (64.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 271ms (Views: 245.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 10:37:38 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (2.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 201ms (Views: 194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 10:37:40 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (12.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 234ms (Views: 226.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:37:41 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (10.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (21.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 220ms (Views: 209.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:38:12 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 212ms (Views: 194.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:40:20 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 4199ms (Views: 4181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:40:59 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (15.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (26.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 4148ms (Views: 4131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:42:32 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 4211ms (Views: 4194.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:43:17 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (23.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 4198ms (Views: 4170.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:46:39 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 184ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:48:10 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (23.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 333ms (Views: 316.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:48:28 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (31.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 453ms (Views: 434.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:49:12 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (21.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 296ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:50:15 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 271ms (Views: 261.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:51:49 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 316ms (Views: 304.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:52:25 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 359ms (Views: 340.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:57:25 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 300ms (Views: 286.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 10:59:12 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 292ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:02:00 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (23.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 348ms (Views: 334.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:02:11 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 385ms (Views: 369.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:05:03 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 321ms (Views: 293.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:12:06 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (10.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (27.0ms)
+  Rendered partials/_header.html.erb (5.0ms) [cache miss]
+Completed 200 OK in 347ms (Views: 331.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:12:50 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (14.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (27.0ms)
+  Rendered partials/_header.html.erb (14.0ms) [cache miss]
+Completed 200 OK in 500ms (Views: 489.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:13:52 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (22.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 5934ms (Views: 5917.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:16:58 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 734ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: plugins/color.
+Load paths:
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/config
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/images
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actioncable-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actionview-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/node_modules
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/images
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets):
+     9:     <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
+    10:     <%= csrf_meta_tags %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    13:     <%= javascript_include_tag 'application' %>
+    14: 
+    15:     <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+  
+app/assets/stylesheets/application.css.scss:19
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___91248923_132868760'
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:17:18 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 4994ms (Views: 4982.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:21:37 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 4981ms (Views: 4966.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:24:00 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 315ms (Views: 296.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:25:14 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (45.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (56.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 389ms (Views: 378.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:28:57 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 266ms (Views: 244.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:29:10 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 239ms (Views: 219.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:33:18 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 241ms (Views: 212.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 11:33:33 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (15.6ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 233ms (Views: 195.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions/1/edit" for 127.0.0.1 at 2017-06-25 11:33:36 -0400
+Processing by RegionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT  "regions".* FROM "regions" WHERE "regions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering regions/edit.html.erb within layouts/application
+  [1m[36mProject Load (1.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."region_id" = ?[0m  [["region_id", 1]]
+  Rendered regions/_project.html.erb (5.0ms) [cache miss]
+  Rendered regions/_project.html.erb (5.0ms) [cache miss]
+  Rendered regions/_project.html.erb (4.0ms) [cache miss]
+  Rendered regions/_form.html.erb (85.0ms) [cache miss]
+  Rendered regions/edit.html.erb within layouts/application (97.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 307ms (Views: 292.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 11:33:45 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 202ms (Views: 174.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions/new" for 127.0.0.1 at 2017-06-25 11:33:48 -0400
+Processing by RegionsController#new as HTML
+  Rendering regions/new.html.erb within layouts/application
+  Rendered regions/_project.html.erb (4.0ms) [cache miss]
+  Rendered regions/_form.html.erb (23.0ms) [cache miss]
+  Rendered regions/new.html.erb within layouts/application (35.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 236ms (Views: 219.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 11:33:56 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (0.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 213ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:33:58 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 225ms (Views: 222.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20170625122918)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "messages"[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20170625122918"]]
+  [1m[35m (31.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20170625122918)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" text, "published" boolean, "valid_to" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170625122918"]]
+  [1m[35m (15.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_projects_on_region_id' AND type='index'
+[0m
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:36:35 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 211ms (Views: 189.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:42:21 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (108.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (120.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 17289ms (Views: 17262.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 11:44:50 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 343ms (Views: 326.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:17:58 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (102.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (114.0ms)
+Completed 500 Internal Server Error in 4139ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: daterangepicker.
+Load paths:
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/config
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/images
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/stylesheets
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actioncable-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actionview-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/lib/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/node_modules
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/images
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets):
+     9:     <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
+    10:     <%= csrf_meta_tags %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    13:     <%= javascript_include_tag 'application' %>
+    14: 
+    15:     <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+  
+app/assets/stylesheets/application.css.scss:22
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1128650664_63514400'
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:21:00 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 5639ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'daterangepicker' with type 'application/javascript'
+Checked in these paths: 
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/config
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/images
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/stylesheets
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actioncable-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actionview-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/lib/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/node_modules
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/images
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/fonts):
+     9:     <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
+    10:     <%= csrf_meta_tags %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    13:     <%= javascript_include_tag 'application' %>
+    14: 
+    15:     <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+  
+app/assets/javascripts/application.js:18
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1128650664_33487020'
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:23:36 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'moment' with type 'application/javascript'
+Checked in these paths: 
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/config
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/images
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/app/assets/stylesheets
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/wysiwyg-rails-2.6.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootswatch-rails-3.3.5/vendor/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actioncable-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/actionview-5.1.1/lib/assets/compiled
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/lib/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/vendor/assets/bower_components
+  c:/Users/aandrade/Desktop/dist/wfm_scroller/node_modules
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.7/assets/images
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/stylesheets
+  c:/Ruby226/lib/ruby/gems/2.2.0/gems/font-awesome-sass-4.7.0/assets/fonts):
+     9:     <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
+    10:     <%= csrf_meta_tags %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    13:     <%= javascript_include_tag 'application' %>
+    14: 
+    15:     <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__1128650664_157019980'
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:24:12 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (83.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (96.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 14769ms (Views: 14741.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:25:19 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (3.0ms) [cache miss]
+Completed 200 OK in 5581ms (Views: 5571.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:26:10 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (21.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 406ms (Views: 394.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:26:34 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 356ms (Views: 345.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:26:45 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (14.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (26.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 402ms (Views: 383.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:28:14 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 232ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:33:46 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 360ms (Views: 348.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:34:24 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 230ms (Views: 215.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:34:53 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 262ms (Views: 245.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:36:55 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 397ms (Views: 381.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:37:04 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 397ms (Views: 376.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:37:54 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 389ms (Views: 372.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:46:31 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 454ms (Views: 438.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:48:38 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 409ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:50:06 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 383ms (Views: 363.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:54:27 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 373ms (Views: 360.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:55:02 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 385ms (Views: 367.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:55:25 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (6.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 429ms (Views: 411.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:58:43 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 406ms (Views: 388.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 12:59:59 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (17.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 387ms (Views: 371.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:26:42 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (28.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 6688ms (Views: 6662.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:27:51 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (22.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 5424ms (Views: 5411.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:29:53 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 230ms (Views: 216.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:31:51 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (16.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (26.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 254ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:32:29 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (19.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (29.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 269ms (Views: 258.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:34:15 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (21.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 238ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:35:01 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 230ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:35:05 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 232ms (Views: 221.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:35:43 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 253ms (Views: 240.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:36:10 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 247ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:37:25 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (18.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 230ms (Views: 216.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:38:06 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 236ms (Views: 221.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:38:25 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 231ms (Views: 218.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:38:57 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AhLAwrjnt9NERXQjeZxc2DuiM4K4qdXZOrdqXuyDre6IOr/6/pxIfGR+fUAyrVbY5TxXtZj6u6ckGZyO7tIBQg==", "message"=>{"name"=>"One", "published"=>"1", "valid_to(1i)"=>"2017", "valid_to(2i)"=>"6", "valid_to(3i)"=>"25", "valid_to(4i)"=>"18", "valid_to(5i)"=>"00", "content"=>"asdasdasdasd"}, "commit"=>"Create Message"}
+  Rendering messages/create.html.erb within layouts/application
+  Rendered messages/create.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 192ms (Views: 179.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:40:53 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (12.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 263ms (Views: 239.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:41:51 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oSiRpgIVRAlVrGI7LcB9y28eDiXorrT6RzbCgZHZK5srAO6eRG67pnWXa1hm8XfLsYBqEsj92oRZmDRRk4iHNw==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to(1i)"=>"2017", "valid_to(2i)"=>"6", "valid_to(3i)"=>"25", "valid_to(4i)"=>"18", "valid_to(5i)"=>"00", "content"=>"Habitant morbi tristique senectus"}, "commit"=>"Create Message"}
+Unpermitted parameters: :valid_to(1i), :valid_to(2i), :valid_to(3i), :valid_to(4i), :valid_to(5i)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (13.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (24.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 276ms (Views: 269.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:42:41 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pX1ifAcMrNVr1qUNEJV7wd4+Pj83iHgizJwFzn1eDP4vVR1EQXdTekvtrG5bpHHBAKBaCBfbFlzSMvMefw+gUg==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to(1i)"=>"2017", "valid_to(2i)"=>"6", "valid_to(3i)"=>"25", "valid_to(4i)"=>"17", "valid_to(5i)"=>"41", "content"=>"Habitant morbi tristique senectus"}, "commit"=>"Create Message"}
+Unpermitted parameters: :valid_to(1i), :valid_to(2i), :valid_to(3i), :valid_to(4i), :valid_to(5i)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 229ms (Views: 223.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 13:43:11 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered messages/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 248ms (Views: 230.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:43:13 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (10.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 243ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:44:02 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2IkG0vobB61RSjjbJctekGrWbfkWI4zr1iaYCcAk2hO9qzG088iJ9JZ/YBzYzHNmjY5lRVVhIqYV/eWuf7GoYA==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to"=>"2017-06-25T15:00", "content"=>"Habitant morbi tristique senectus"}, "commit"=>"Create Message"}
+Unpermitted parameter: :valid_to
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 234ms (Views: 228.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:44:41 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f3C09a+0HBZBrAxmnrPj68gaAMmfN4HXEBNBiFMiUZP1WMvN6c/juWGXBQXVgunrFoRk/r9k76kOvbdYUXP9Pw==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to"=>"2017-06-25T15:00", "content"=>"Habitant morbi tristique senectus"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  [1m[32mINSERT INTO "messages" ("name", "content", "published", "valid_to", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Pellentesque"], ["content", "Habitant morbi tristique senectus"], ["published", "t"], ["valid_to", "2017-06-25 15:00:00"], ["created_at", "2017-06-25 17:44:41.297030"], ["updated_at", "2017-06-25 17:44:41.297030"]]
+  [1m[35m (23.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages/1
+Completed 302 Found in 48ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2017-06-25 13:44:41 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 192ms (Views: 172.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2017-06-25 13:45:17 -0400
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/show.html.erb within layouts/application
+  Rendered messages/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 212ms (Views: 186.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 13:45:20 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (169.0ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `region' for #<#<Class:0x00000011920db8>:0x00000007b24470>):
+    24:               <td><%= msg.content %></td>
+    25:               <td><%= msg.published %></td>
+    26:               <td><%= msg.valid_to %></td>
+    27:               <td><%= link_to 'Show', region %></td>
+    28:               <td><%= link_to 'Edit', edit_message_path(msg) %></td>
+    29:               <td><%= link_to 'Destroy', msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    30:             </tr>
+  
+app/views/messages/index.html.erb:27:in `block in _app_views_messages_index_html_erb__2019705662_64568960'
+app/views/messages/index.html.erb:21:in `_app_views_messages_index_html_erb__2019705662_64568960'
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 13:45:29 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (200.0ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `region' for #<#<Class:0x00000011920db8>:0x000000158db638>):
+    24:               <td><%= msg.content %></td>
+    25:               <td><%= msg.published %></td>
+    26:               <td><%= msg.valid_to %></td>
+    27:               <td><%= link_to 'Show', region %></td>
+    28:               <td><%= link_to 'Edit', edit_message_path(msg) %></td>
+    29:               <td><%= link_to 'Destroy', msg, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    30:             </tr>
+  
+app/views/messages/index.html.erb:27:in `block in _app_views_messages_index_html_erb__2019705662_171892800'
+app/views/messages/index.html.erb:21:in `_app_views_messages_index_html_erb__2019705662_171892800'
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 13:45:49 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 200ms (Views: 182.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 13:45:56 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (21.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 230ms (Views: 206.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 13:46:39 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nn0PTxzU4qKKNDUz3G8SDhjJVVo8s+K07eWclRX50SH7XzgpFQds+00BbfQhaD/4/5Fd5n/xTPkuPuEyqmyjUg==", "message"=>{"name"=>"Etiam", "published"=>"1", "valid_to"=>"2017-06-25T15:00", "content"=>"Tempor massa vel urna cursus dapibus. Quisque venenatis condimentum libero, in aliquam sapien commodo tincidunt. Nunc odio nulla, volutpat"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("name", "content", "published", "valid_to", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Etiam"], ["content", "Tempor massa vel urna cursus dapibus. Quisque venenatis condimentum libero, in aliquam sapien commodo tincidunt. Nunc odio nulla, volutpat"], ["published", "t"], ["valid_to", "2017-06-25 15:00:00"], ["created_at", "2017-06-25 17:46:39.648620"], ["updated_at", "2017-06-25 17:46:39.648620"]]
+  [1m[35m (36.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 49ms (ActiveRecord: 37.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 13:46:39 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 224ms (Views: 208.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:46:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 202ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:53:12 -0400
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NameError (uninitialized constant HomeController::Messages):
+  
+app/controllers/home_controller.rb:3:in `index'
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:53:22 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6602ms (Views: 6586.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:53:55 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6164ms (Views: 6153.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:54:34 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5889ms (Views: 5879.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:56:32 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6240ms (Views: 6224.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 13:57:56 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5820ms (Views: 5808.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:00:16 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5933ms (Views: 5917.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:02:32 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5825ms (Views: 5809.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:09:12 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 205ms (Views: 189.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:09:51 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5696ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "      position": expected ";", was ": absolute;"):
+     9:     <%= tag :meta, name: :kohana, action: action_name, controller: controller_name %>
+    10:     <%= csrf_meta_tags %>
+    11: 
+    12:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    13:     <%= javascript_include_tag 'application' %>
+    14: 
+    15:     <%= tag :meta, name: 'turbolinks-root', content: '/' %>
+  
+app/assets/stylesheets/_main.scss:263
+app/assets/stylesheets/application.css.scss:28
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___1618712598_179757680'
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:10:17 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5460ms (Views: 5444.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:10:53 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5908ms (Views: 5891.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:11:31 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7058ms (Views: 7039.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:11:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 238ms (Views: 225.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:12:15 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 251ms (Views: 230.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:12:40 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 231ms (Views: 216.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:13:09 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 232ms (Views: 221.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:15:08 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 239ms (Views: 227.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:16:59 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 5840ms (Views: 5822.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:17:35 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 5768ms (Views: 5754.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 14:19:24 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (9.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 395ms (Views: 359.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:19:26 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 289ms (Views: 275.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2017-06-25 14:19:28 -0400
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/new.html.erb within layouts/application (25.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 315ms (Views: 301.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2017-06-25 14:20:11 -0400
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dn/w4VGjmoqEdbylyql7btUEIX45RObMDqoKCcSCW2lrXceHWHAU00NA5GI3rlaYMlwpwnoGSIHNcXeuexcpGg==", "message"=>{"name"=>"tables", "published"=>"1", "valid_to"=>"2017-06-25T14:30", "content"=>"<table class=\"tbl tbl-scroll\"><thead><tr><th>Project Name</th><th>Unofficial SLA as of 1300EST</th><th>MTD SLA as of Yesterday</th><th>OUTAGE || Callouts</th></tr></thead><tbody><tr><td>FIES</td><td>95.6%</td><td class=\"text-red\">77.9%</td><td>Doing something that is nothing</td></tr><tr><td>Software One</td><td class=\"text-red\">66.8%</td><td class=\"text-red\">67.5%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>NOVO NORDISK</td><td class=\"text-red\">63.1%</td><td>93.1%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Bio-Rad - EMEA</td><td class=\"text-red\">56.2%</td><td class=\"text-red\">55.5%</td><td>Doing something that is nothing</td></tr><tr><td>Brown-Forman</td><td>88.5%</td><td class=\"text-red\">50.7%</td><td>Doing something that is nothing</td></tr><tr><td>Alcoa - LATAM</td><td class=\"text-red\">55.7%</td><td>80.2%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>UNITEC</td><td class=\"text-red\">61.6%</td><td>95.0%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Amcor</td><td>84.1%</td><td class=\"text-red\">76.0%</td><td>Doing something that is nothing</td></tr><tr><td>Banco Fibra</td><td>97.9%</td><td>92.8%</td><td>Doing something that is nothing</td></tr><tr><td>Sicredi</td><td class=\"text-red\">56.0%</td><td>99.3%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Nidera</td><td>98.2%</td><td>87.8%</td><td>Doing something that is nothing</td></tr></tbody></table>"}, "commit"=>"Create Message"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("name", "content", "published", "valid_to", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "tables"], ["content", "<table class=\"tbl tbl-scroll\"><thead><tr><th>Project Name</th><th>Unofficial SLA as of 1300EST</th><th>MTD SLA as of Yesterday</th><th>OUTAGE || Callouts</th></tr></thead><tbody><tr><td>FIES</td><td>95.6%</td><td class=\"text-red\">77.9%</td><td>Doing something that is nothing</td></tr><tr><td>Software One</td><td class=\"text-red\">66.8%</td><td class=\"text-red\">67.5%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>NOVO NORDISK</td><td class=\"text-red\">63.1%</td><td>93.1%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Bio-Rad - EMEA</td><td class=\"text-red\">56.2%</td><td class=\"text-red\">55.5%</td><td>Doing something that is nothing</td></tr><tr><td>Brown-Forman</td><td>88.5%</td><td class=\"text-red\">50.7%</td><td>Doing something that is nothing</td></tr><tr><td>Alcoa - LATAM</td><td class=\"text-red\">55.7%</td><td>80.2%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>UNITEC</td><td class=\"text-red\">61.6%</td><td>95.0%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Amcor</td><td>84.1%</td><td class=\"text-red\">76.0%</td><td>Doing something that is nothing</td></tr><tr><td>Banco Fibra</td><td>97.9%</td><td>92.8%</td><td>Doing something that is nothing</td></tr><tr><td>Sicredi</td><td class=\"text-red\">56.0%</td><td>99.3%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Nidera</td><td>98.2%</td><td>87.8%</td><td>Doing something that is nothing</td></tr></tbody></table>"], ["published", "t"], ["valid_to", "2017-06-25 14:30:00"], ["created_at", "2017-06-25 18:20:11.609037"], ["updated_at", "2017-06-25 18:20:11.609037"]]
+  [1m[35m (31.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 44ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:20:11 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (3.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (9.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 236ms (Views: 222.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:20:16 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 224ms (Views: 214.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:20:44 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 233ms (Views: 220.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 14:21:10 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 279ms (Views: 261.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:21:13 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 238ms (Views: 231.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/1/edit" for 127.0.0.1 at 2017-06-25 14:21:18 -0400
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 246ms (Views: 225.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:21:21 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (7.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 267ms (Views: 255.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:23:03 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (5.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 219ms (Views: 201.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/1/edit" for 127.0.0.1 at 2017-06-25 14:23:07 -0400
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (8.0ms) [cache miss]
+  Rendered messages/edit.html.erb within layouts/application (19.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 240ms (Views: 235.5ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/messages/1" for 127.0.0.1 at 2017-06-25 14:23:28 -0400
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C03u6kFVqzp0htQGEqM/+hCNrY5Q8U58gBD3cUfUQwS8qfSUt9vBVVJPcEr+zlBYi4Utosr+bDgGiRw+41rrXg==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to"=>"2017-06-25T15:00:00", "content"=>"<p>Habitant morbi tristique senectus</p>"}, "commit"=>"Update Message", "id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/update.html.erb within layouts/application
+  Rendered messages/update.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 227ms (Views: 203.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:24:38 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (15.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 235ms (Views: 217.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages/1/edit" for 127.0.0.1 at 2017-06-25 14:24:41 -0400
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (21.6ms) [cache miss]
+  Rendered messages/edit.html.erb within layouts/application (22.6ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 370ms (Views: 324.7ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/messages/1" for 127.0.0.1 at 2017-06-25 14:24:52 -0400
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n1DV9Trz7EjTbNzy3nEiM/s3YMaKimDPUADCUXWPrGMotM+LzH2GJ/WleL4yHE2RYD/g6hCFQovWmSke0QEEOQ==", "message"=>{"name"=>"Pellentesque", "published"=>"1", "valid_to"=>"2017-06-25T15:00:00", "content"=>"<p>Habitant morbi tristique senectus</p>"}, "commit"=>"Update Message", "id"=>"1"}
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "messages" SET "content" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["content", "<p>Habitant morbi tristique senectus</p>"], ["updated_at", "2017-06-25 18:24:52.872324"], ["id", 1]]
+  [1m[35m (42.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 54ms (ActiveRecord: 47.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:24:52 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 233ms (Views: 217.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/2/edit" for 127.0.0.1 at 2017-06-25 14:24:57 -0400
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (9.0ms) [cache miss]
+  Rendered messages/edit.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (0.0ms) [cache miss]
+Completed 200 OK in 258ms (Views: 244.9ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/messages/2" for 127.0.0.1 at 2017-06-25 14:25:05 -0400
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xXJdJI74OGlFjW1a9yXQ/FTTFAK7OwVqfxNDpzBjYBvGudZZfYi9N2dZrNlwZQQc1KzzBz2N9Fje3FQnj9xF5g==", "message"=>{"name"=>"Etiam", "published"=>"1", "valid_to"=>"2017-06-25T15:00:00", "content"=>"<p>Tempor massa vel urna cursus dapibus. Quisque venenatis condimentum libero, in aliquam sapien commodo tincidunt. Nunc odio nulla, volutpat</p>"}, "commit"=>"Update Message", "id"=>"2"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "messages" SET "content" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["content", "<p>Tempor massa vel urna cursus dapibus. Quisque venenatis condimentum libero, in aliquam sapien commodo tincidunt. Nunc odio nulla, volutpat</p>"], ["updated_at", "2017-06-25 18:25:05.317332"], ["id", 2]]
+  [1m[35m (18.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 25ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:25:05 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 213ms (Views: 198.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:25:08 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 212ms (Views: 205.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 14:25:26 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (11.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 298ms (Views: 281.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:25:28 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (9.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 246ms (Views: 229.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/messages/3/edit" for 127.0.0.1 at 2017-06-25 14:25:30 -0400
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering messages/edit.html.erb within layouts/application
+  Rendered messages/_form.html.erb (7.0ms) [cache miss]
+  Rendered messages/edit.html.erb within layouts/application (20.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 275ms (Views: 256.5ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/messages/3" for 127.0.0.1 at 2017-06-25 14:26:14 -0400
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t883SZwKmsTf7KsExoJrN5gWptjbN+YE193v/pSSU1Lg1+mFFs/TtfDkuy9RU8QfaqkdTFUp9gnjVKI1FEqzsQ==", "message"=>{"name"=>"tables", "published"=>"1", "valid_to"=>"2017-06-25T14:30:00", "content"=>"<table class=\"table table-condensed table-striped\"><thead><tr><th>Project Name</th><th>Unofficial SLA as of 1300EST</th><th>MTD SLA as of Yesterday</th><th>OUTAGE || Callouts</th></tr></thead><tbody><tr><td>FIES</td><td>95.6%</td><td class=\"text-red\">77.9%</td><td>Doing something that is nothing</td></tr><tr><td>Software One</td><td class=\"text-red\">66.8%</td><td class=\"text-red\">67.5%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>NOVO NORDISK</td><td class=\"text-red\">63.1%</td><td>93.1%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Bio-Rad - EMEA</td><td class=\"text-red\">56.2%</td><td class=\"text-red\">55.5%</td><td>Doing something that is nothing</td></tr><tr><td>Brown-Forman</td><td>88.5%</td><td class=\"text-red\">50.7%</td><td>Doing something that is nothing</td></tr><tr><td>Alcoa - LATAM</td><td class=\"text-red\">55.7%</td><td>80.2%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>UNITEC</td><td class=\"text-red\">61.6%</td><td>95.0%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Amcor</td><td>84.1%</td><td class=\"text-red\">76.0%</td><td>Doing something that is nothing</td></tr><tr><td>Banco Fibra</td><td>97.9%</td><td>92.8%</td><td>Doing something that is nothing</td></tr><tr><td>Sicredi</td><td class=\"text-red\">56.0%</td><td>99.3%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Nidera</td><td>98.2%</td><td>87.8%</td><td>Doing something that is nothing</td></tr></tbody></table>"}, "commit"=>"Update Message", "id"=>"3"}
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "messages" SET "content" = ?, "updated_at" = ? WHERE "messages"."id" = ?[0m  [["content", "<table class=\"table table-condensed table-striped\"><thead><tr><th>Project Name</th><th>Unofficial SLA as of 1300EST</th><th>MTD SLA as of Yesterday</th><th>OUTAGE || Callouts</th></tr></thead><tbody><tr><td>FIES</td><td>95.6%</td><td class=\"text-red\">77.9%</td><td>Doing something that is nothing</td></tr><tr><td>Software One</td><td class=\"text-red\">66.8%</td><td class=\"text-red\">67.5%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>NOVO NORDISK</td><td class=\"text-red\">63.1%</td><td>93.1%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Bio-Rad - EMEA</td><td class=\"text-red\">56.2%</td><td class=\"text-red\">55.5%</td><td>Doing something that is nothing</td></tr><tr><td>Brown-Forman</td><td>88.5%</td><td class=\"text-red\">50.7%</td><td>Doing something that is nothing</td></tr><tr><td>Alcoa - LATAM</td><td class=\"text-red\">55.7%</td><td>80.2%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>UNITEC</td><td class=\"text-red\">61.6%</td><td>95.0%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Amcor</td><td>84.1%</td><td class=\"text-red\">76.0%</td><td>Doing something that is nothing</td></tr><tr><td>Banco Fibra</td><td>97.9%</td><td>92.8%</td><td>Doing something that is nothing</td></tr><tr><td>Sicredi</td><td class=\"text-red\">56.0%</td><td>99.3%</td><td>Something is happening and Ops dont know it</td></tr><tr><td>Nidera</td><td>98.2%</td><td>87.8%</td><td>Doing something that is nothing</td></tr></tbody></table>"], ["updated_at", "2017-06-25 18:26:14.363273"], ["id", 3]]
+  [1m[35m (20.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/messages
+Completed 302 Found in 32ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:26:14 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (3.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 205ms (Views: 195.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:26:17 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 221ms (Views: 207.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:26:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 5921ms (Views: 5902.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:28:39 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6140ms (Views: 6128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-25 14:29:54 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6253ms (Views: 6239.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/regions" for 127.0.0.1 at 2017-06-25 14:30:28 -0400
+Processing by RegionsController#index as HTML
+  Rendering regions/index.html.erb within layouts/application
+  [1m[36mRegion Load (0.0ms)[0m  [1m[34mSELECT "regions".* FROM "regions"[0m
+  Rendered regions/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (2.0ms) [cache miss]
+Completed 200 OK in 281ms (Views: 268.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages" for 127.0.0.1 at 2017-06-25 14:30:31 -0400
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  [1m[36mMessage Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "messages" LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mMessage Load (0.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered messages/index.html.erb within layouts/application (4.0ms)
+  Rendered partials/_header.html.erb (1.0ms) [cache miss]
+Completed 200 OK in 310ms (Views: 278.1ms | ActiveRecord: 1.0ms)
+
+

@@ -1,6 +1,15 @@
 <% title "Home" %>
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<div class="scroll-container">
+  <div class="scrolling">
+    <marquee class="scrolling" behavior="scroll" direction="up" scrollamount="2">
+      <% @msgs.each do |msg| %>
+        <%= raw msg.content %>
+      <% end %>
+    </marquee>
+  </div>
+</div>
+
 <footer class="main-footer">
   <%= link_to "edit", regions_path, :class => "pull-right" %>
 </footer>

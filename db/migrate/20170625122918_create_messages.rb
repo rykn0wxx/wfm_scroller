@@ -4,7 +4,7 @@ class CreateMessages < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :content
       t.boolean :published
-      t.date :valid_to
+      t.datetime :valid_to
 
       t.timestamps
     end

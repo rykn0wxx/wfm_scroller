@@ -29,11 +29,26 @@
   'use strict';
 
   var AppAdmin = function (el, opts) {
-    this.$element = $(el);
+    this.$el = $(el);
     this.options = $.extend({}, AppAdmin.DEFAULTS, opts);
   };
 
-  AppAdmin.DEFAULTS = {};
+  AppAdmin.DEFAULTS = {
+    drp: {
+      singleDatePicker: true,
+      showDropdowns: true,
+      timePicker: true,
+      timePickerIncrement: 30,
+      autoApply: true,
+      locale: {
+        format: 'MM/DD/YYYY h:mm A'
+      },
+      minDate: moment().startOf('day'),
+      startDate: moment().startOf('day'),
+      endDate: moment().add(1, 'days').endOf('day'),
+      maxDate: moment().add(7, 'days').endOf('day')
+    }
+  };
 
   AppAdmin.prototype.nestedHelpers = function () {
     $(document).on('click', 'form.app-form .add_field', function (event) {
@@ -53,10 +68,55 @@
     });
   };
 
+  AppAdmin.prototype.initEditor = function () {
+    $(document).on('click', 'form .btn-show-editor', function (ev) {
+      var el =  $('form .content-editor');
+      if (ev.target.dataset.editor === 'show') {
+        el.froalaEditor('destroy');
+        el.froalaEditor({
+          toolbarButtons: ['undo', 'redo' , '|', 'bold', 'italic', 'underline', 'insertTable', 'html'],
+          theme: 'dark',
+          zIndex: 2003,
+          codeMirror: true,
+          codeBeautifierOptions: {
+            end_with_newline: true,
+            indent_inner_html: true,
+            wrap_line_length: 0
+          }
+        });
+        ev.target.dataset.editor = 'hide';
+        ev.target.innerText = 'Hide Editor';
+        ev.target.blur();
+      } else {
+        el.froalaEditor('destroy');
+        ev.target.dataset.editor = 'show';
+        ev.target.innerText = 'Show Editor';
+        ev.target.blur();
+      }
+    });
+  };
+
+  AppAdmin.prototype.datePicker = function (el) {
+    var self = this.options.drp;
+    el.each(function (i, v) {
+      $(v).daterangepicker(self, function (ss, ee) {
+        console.log($(v).val());
+      });
+    });
+  };
+
   function _init (data) {
     'use strict';
 
     data.nestedHelpers();
+    if (data.options.form.needEditor) {
+      data.initEditor();
+    }
+    if (data.$el.find('input[data-name="daterange"]').length > 0) {
+      var elDr = data.$el.find('input[data-name="daterange"]');
+      data.datePicker(elDr);
+    }
+
   }
 
   function Plugin(option) {
@@ -83,6 +143,7 @@
     .on('turbolinks:load', function (ev) {
       var $ryk = $('.rykn0wxx');
       var kk = $ryk.find('meta[name="kohana"]');
+      var withEditor = $ryk.find('.form-editor').length > 0;
       if ($ryk.data('mudhead')) {
         $ryk.data('mudhead', null)
       }
@@ -90,6 +151,9 @@
         controller: {
           action: kk.attr('action'),
           name: kk.attr('controller')
+        },
+        form: {
+          needEditor: withEditor
         }
       });
       ev.preventDefault();

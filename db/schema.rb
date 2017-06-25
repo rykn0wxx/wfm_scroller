@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170625122918) do
     t.string "name"
     t.text "content"
     t.boolean "published"
-    t.date "valid_to"
+    t.datetime "valid_to"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

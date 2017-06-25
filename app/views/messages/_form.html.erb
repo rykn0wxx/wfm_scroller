@@ -1,4 +1,4 @@
-<%= simple_form_for(msg, html: { class: 'form-horizontal app-form' }) do |f| %>
+<%= simple_form_for(msg, html: { class: 'form-horizontal app-form form-editor' }) do |f| %>
   <%= f.error_notification %>
 
   <h4 class="body1"><%= msg.name.blank? ? "New Record" : msg.name + " Information" %></h4>
@@ -9,15 +9,20 @@
     <div class="form-group">
       <%= f.label :valid_to, :class => "col-sm-3 control-label" %>
       <div class="col-sm-9">
-        <%= f.date_field :valid_to, :class => "form-control input-sm" %>
+        <%= f.input :valid_to, :label => false, :as => :datetime, :html5 => true %>
       </div>
     </div>
     <div class="form-group">
       <%= f.label :content, :class => "control-label" %>
-      <%= f.text_area :content, :class => "tinymce form-control", :rows => 10 %>
+      <%= button_tag "Show Editor", :type => "button", :data => { :editor => "show" }, :class => "btn btn-sm btn-show-editor" %>
+      <%= f.text_area :content, :class => "content-editor form-control", :rows => 3 %>
     </div>
-    <%= f.input :content, :input_html => { :class => "tinymce" } %>
+  </div>
 
+  <div class="form-actions">
+    <%= link_to "Back", messages_path, :class => "btn btn-sm btn-default btn-cancel" %>
+    <%= link_to add_nav[:name], add_nav[:path], :class => "btn btn-primary btn-sm" if !add_nav.nil? %>
+    <%= f.button :submit %>
   </div>
 
 <% end %>
