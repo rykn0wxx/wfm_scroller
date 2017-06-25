@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="rykn0wxx">
+  <head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="rykn0wxx" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title><%= content_for?(:title) ? yield(:title) + " | WfmScroller" : "WfmScroller" %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div class="wrapper" id="wrapper">
+
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+
+      <%= content_tag :h3, yield(:title) if show_title? %>
+
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>
