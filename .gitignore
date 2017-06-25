@@ -53,6 +53,7 @@ build
 /src/release
 /release
 /bower_components
+/vendor/assets/bower_components
 
 
 # Ignore bundler config.
